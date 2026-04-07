@@ -112,7 +112,7 @@ def install_dependencies():
 
 if __name__ == "__main__":
     print("\n" + "=" * 50)
-    print("小禾帮教务管理系统 - 自动化测试运行器")
+    print("肖恩教务管家 - 自动化测试运行器")
     print("=" * 50)
     print("\n可用命令:")
     print("  1. run_all_tests()      - 运行所有测试")
