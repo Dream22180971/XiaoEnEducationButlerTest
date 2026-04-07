@@ -1,0 +1,40 @@
+base_url: "https://xue.yunvip123.com"
+timeout: 10
+implicit_wait: 10
+explicit_wait: 15
+
+browser:
+  name: "chrome"
+  headless: false
+  window_maximize: true
+  window_size:
+    width: 1920
+    height: 1080
+
+test_data:
+  admin:
+    org_code: ""
+    phone: ""
+    password: ""
+    org_name: ""
+  teacher:
+    org_code: ""
+    phone: ""
+    password: ""
+  parent:
+    org_code: ""
+    phone: ""
+    password: ""
+
+reports:
+  allure_results: "./reports/allure-results"
+  allure_report: "./reports/allure-report"
+  screenshots: "./screenshots"
+  logs: "./logs"
+
+database:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: ""
+  database: "xiaohebang_test"

@@ -1,0 +1,44 @@
+login:
+  valid_users:
+    - username: "8888"
+      password: "123456"
+      role: "admin"
+      org_name: "测试培训机构"
+    - username: "teacher001"
+      password: "123456"
+      role: "teacher"
+      org_name: "测试培训机构"
+    - username: "teacher002"
+      password: "123456"
+      role: "teacher"
+      org_name: "测试培训机构"
+
+  invalid_users:
+    - username: ""
+      password: "123456"
+      expected_error: "用户名不能为空"
+    - username: "8888"
+      password: ""
+      expected_error: "密码不能为空"
+    - username: ""
+      password: ""
+      expected_error: "用户名不能为空"
+    - username: "wronguser"
+      password: "wrongpassword"
+      expected_error: "用户名或密码错误"
+    - username: "8888"
+      password: "wrongpassword"
+      expected_error: "用户名或密码错误"
+
+  sql_injection_cases:
+    - "admin' OR '1'='1"
+    - "admin'--"
+    - "admin' OR 1=1--"
+    - "' OR '1'='1' --"
+    - "1' OR '1' = '1"
+
+  xss_cases:
+    - "<script>alert('XSS')</script>"
+    - "<img src=x onerror=alert('XSS')>"
+    - "javascript:alert('XSS')"
+    - "<svg onload=alert('XSS')>"

@@ -1,0 +1,70 @@
+students:
+  - name: "张三"
+    gender: "男"
+    birthday: "2015-03-15"
+    phone: "13800138001"
+    parent_name: "张父"
+    parent_phone: "13900139001"
+    status: "在读"
+    remaining_hours: 50
+    points: 100
+
+  - name: "李四"
+    gender: "女"
+    birthday: "2016-06-20"
+    phone: "13800138002"
+    parent_name: "李母"
+    parent_phone: "13900139002"
+    status: "试听"
+    remaining_hours: 0
+    points: 0
+
+  - name: "王五"
+    gender: "男"
+    birthday: "2014-12-10"
+    phone: "13800138003"
+    parent_name: "王父"
+    parent_phone: "13900139003"
+    status: "停课"
+    remaining_hours: 30
+    points: 50
+
+courses:
+  - name: "钢琴一对一"
+    type: "一对一"
+    billing_type: "按课时"
+    price: 200
+    duration: 45
+
+  - name: "舞蹈集体班"
+    type: "集体班"
+    billing_type: "按课时"
+    price: 80
+    duration: 60
+
+  - name: "美术兴趣班"
+    type: "小班课"
+    billing_type: "按期"
+    price: 1500
+    duration: 90
+
+teachers:
+  - name: "李老师"
+    phone: "13700137001"
+    subjects:
+      - "钢琴"
+      - "声乐"
+    status: "在职"
+
+  - name: "王老师"
+    phone: "13700137002"
+    subjects:
+      - "舞蹈"
+    status: "在职"
+
+  - name: "张老师"
+    phone: "13700137003"
+    subjects:
+      - "美术"
+      - "书法"
+    status: "离职"

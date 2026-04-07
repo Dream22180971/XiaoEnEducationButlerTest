@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+pytest_cache/
+.coverage
+htmlcov/
+
+# Reports
+reports/
+screenshots/
+logs/
+
+# Configuration
+config/secrets.yaml
+config/config.local.yaml
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Allure
+allure-report/
+allure-results/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
